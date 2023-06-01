@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         <p className={styles.description}>
           <Image src="/logo_sweetly.svg" width="600" height="144" alt="" />
         </p>
-        <h2>It's Coming!</h2>
+        <h2>It`&apos;`s Coming!</h2>
         <p className={styles.description}>
         Indulge in the ultimate realm of premium adult content, meticulously curated to fulfill your wildest fantasies. Our collection encompasses a diverse array of tantalizing experiences, ranging from seductive videos to immersive storytelling and exclusive encounters. Immerse yourself in a world of uninhibited pleasure, where passion knows no boundaries. Our premium adult content offers unrivaled quality, featuring captivating performances and breathtaking visuals that will leave you craving for more. Unleash your desires and elevate your adult entertainment experience to new heights with our handpicked selection of premium adult content.
         </p>
