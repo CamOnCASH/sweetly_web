@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Script from 'next/script'
 
 const Home: NextPage = () => {
   return (
@@ -30,9 +31,21 @@ const Home: NextPage = () => {
              <link rel="manifest" href="/favicon/manifest.json" />
              <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
       </Head>
+      
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-5CKRDY7MK8"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'G-5CKRDY7MK8');
+        `}
+      </Script>
       <main className={styles.main}>
-        
         <h1>Sweetly</h1>
         <Image src="/logo_sweetly.svg" width="300" height="144" alt=""  />
         <h2>It&apos;s Coming!</h2>
